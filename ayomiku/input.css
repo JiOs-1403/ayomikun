@@ -1,0 +1,288 @@
+@import "tailwindcss";
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.abt-img{
+   min-height: 150px;
+   max-height: 300px;
+   border-radius: 50%;
+   margin-left: 75px;
+   margin-top: 50px;
+   border: #fc7048 10px solid;
+}
+
+.navbar{
+    background-color: #fc7048;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    padding-left: 20px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    color: rgba(255, 255, 255, 0.719) !important;
+    
+}
+
+.nav:hover{
+    color: white !important;
+    transition: transform .5s;
+    transform: scale(0.9);
+}
+
+.navbox{
+    display: flex;
+    justify-content: center;
+   margin-right: 20px;
+   padding: 0px 2.5px;
+   align-items: center;
+}
+
+.navbox:hover{
+    background-color: #c55a3d;
+    color: white !important;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+
+.headings{
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    margin-top: 75px;
+}
+
+.hd:hover{
+    color: white;
+    background-color: #fc7048;
+}
+
+.constructs{
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.hd{
+    font-weight: 600 !important;
+    color: black;
+    font-size: large;
+    padding: 20px 17.5px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 40px;
+    border: #fc7048 3px solid;
+}
+
+
+.font {
+  font-family:"Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(99, 99, 99);
+  font-size: medium;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.abt-sp{
+    color: #fc7048;
+}
+
+.abttt{
+    font-size: xx-large;
+    font-weight: 700;
+    color: black;
+}
+
+.grid2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gd1{
+    line-height: 0.5;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    border: rgb(99, 99, 99) 1px solid;
+    line-height: 1;
+}
+
+.gd1-1{
+    color: black;
+}
+
+li{
+    font-size: large;
+    font-weight: 500;
+}
+
+ul{
+    line-height: 1.5;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.td{
+    font-size: x-large;
+    margin-top: -30px;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 50px;
+    gap: 30px;
+
+}
+
+.gddd{
+    padding: 30px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.425) 1px .5px 5px;  
+}
+
+.two{
+    grid-area: 2/2/3/3;
+}
+
+.two2{
+    grid-area: 2/3/3/4;
+}
+
+.td1{
+    font-size: x-large;
+}
+
+.skills{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.ct{
+    color: white !important;
+}
+
+.contact{
+    background-color: #fc7048;
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width:768px) and (min-width:300px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .imgd{
+        max-height: 80px;
+        min-height: 45px;
+    }
+    
+    .grid3{
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid: 20px;
+        /* padding: 50px; */
+    }
+
+    .gdd{
+        padding: 5px;
+        height: 50px;
+    }
+
+    .two{
+        grid-area: 3/1/4/2;
+    }
+
+    .two2{
+        grid-area: 3/2/4/3;
+    }
+
+    .hd{
+        padding: 10px 17.5px;
+        font-size: small;
+    }
+
+    .td1{
+        font-size: medium;
+    }
+    
+    .nav{
+      font-size: small;
+    }
+
+
+    .abt-img{
+        margin: 50px 0 0 0;
+        height: 280px;
+        align-self: center;
+    }
+
+    .abttt{
+        text-align: center;
+    }
+
+    .abttt2{
+        text-align: center;
+    }
+
+    .abtt-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+   .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
