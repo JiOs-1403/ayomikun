@@ -60,6 +60,7 @@ a{
     justify-content: center;
     height: fit-content;
     margin-top: 75px;
+    margin-bottom: 10px;
 }
 
 .hd:hover{
@@ -214,10 +215,10 @@ ul{
     }
     
     .grid3{
-        margin: 0;
+        margin: 0 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        grid: 20px;
+        gap: 15px;
         /* padding: 50px; */
     }
 
@@ -244,7 +245,7 @@ ul{
     }
     
     .nav{
-      font-size: small;
+      font-size: x-small;
     }
 
 
@@ -256,10 +257,12 @@ ul{
 
     .abttt{
         text-align: center;
+        font-size: x-large;
     }
 
     .abttt2{
         text-align: center;
+        font-size: small;
     }
 
     .abtt-img{
@@ -284,5 +287,23 @@ ul{
     display: block;
     text-align: left;
   }
+
+  .constructs{
+    padding: 10px !important;
+  }
+
+  li{
+    font-size: x-small;
+  }
+
+  .ct{
+    font-size: small;
+  }
+
+  .navbox{
+    margin-right: 10px;
+    padding: 0 1.5px;
+  }
+
 }
 
